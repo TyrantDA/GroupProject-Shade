@@ -47,7 +47,14 @@ public class MoveRoom : MonoBehaviour
             {
                 // used roomlink and linedwith to find location
                 GameObject[] hold = roomLink.GetComponent<Room>().getPlacement();
-                other.gameObject.transform.position = hold[linkedWith].GetComponent<MoveRoom>().SpawnPos.position;
+                for(int x = 0; x < hold.Length; x++)
+                {
+                    if(hold[x].GetComponent<MoveRoom>().ID == linkedWith)
+                    {
+                        other.gameObject.transform.position = hold[x].GetComponent<MoveRoom>().SpawnPos.position;
+                    }
+                }
+                
 
             }
             else
@@ -57,7 +64,13 @@ public class MoveRoom : MonoBehaviour
                 if(linked)
                 {
                     GameObject[] hold = roomLink.GetComponent<Room>().getPlacement();
-                    other.gameObject.transform.position = hold[linkedWith].GetComponent<MoveRoom>().SpawnPos.position;
+                    for (int x = 0; x < hold.Length; x++)
+                    {
+                        if (hold[x].GetComponent<MoveRoom>().ID == linkedWith)
+                        {
+                            other.gameObject.transform.position = hold[x].GetComponent<MoveRoom>().SpawnPos.position;
+                        }
+                    }
                 }
                 else
                 {
