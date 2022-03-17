@@ -44,7 +44,7 @@ public class RoomSpawn : MonoBehaviour
     {
         for (int x = 0; x < NumberOfRoom; x++)
         {
-            hold = RoomLoaded[x].GetComponent<Room>().NumberOfDoor;
+            //hold = RoomLoaded[x].GetComponent<Room>().NumberOfDoor;
             Vector3 holdPos = RoomLoaded[x].GetComponent<Room>().getPos();
             Debug.Log("RoomPos " + holdPos + "  :  " + RoomLoaded.Capacity);
             //holdPlacement = RoomLoaded[x].GetComponent<Room>().getPlacement();

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    public int NumberOfDoor;
+    public int ID;
     [SerializeField] GameObject[] placementOfDoors;
     
     [SerializeField] Vector3 RoomPos;

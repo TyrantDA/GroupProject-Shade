@@ -11,8 +11,8 @@ public class MoveRoom : MonoBehaviour
     public Transform SpawnPos;
 
     bool linked;
-    int linkedWith;
-    GameObject roomLink;
+    [SerializeField] int linkedWith;
+    [SerializeField] GameObject roomLink;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,9 +38,14 @@ public class MoveRoom : MonoBehaviour
     {
         return linked;
     }
+
+    public GameObject getLinkedRoom()
+    {
+        return roomLink;
+    }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("has detected " + other.tag);
+        //Debug.Log("has detected " + other.tag);
         if(other.CompareTag("Player"))
         {
             if(linked)
@@ -52,6 +57,7 @@ public class MoveRoom : MonoBehaviour
                     if(hold[x].GetComponent<MoveRoom>().ID == linkedWith)
                     {
                         other.gameObject.transform.position = hold[x].GetComponent<MoveRoom>().SpawnPos.position;
+                        //Debug.Log(hold[x].GetComponent<MoveRoom>().SpawnPos.position);
                     }
                 }
                 
@@ -69,12 +75,13 @@ public class MoveRoom : MonoBehaviour
                         if (hold[x].GetComponent<MoveRoom>().ID == linkedWith)
                         {
                             other.gameObject.transform.position = hold[x].GetComponent<MoveRoom>().SpawnPos.position;
+                            //Debug.Log(hold[x].GetComponent<MoveRoom>().SpawnPos.position);
                         }
                     }
                 }
                 else
                 {
-                    Debug.Log("something when wrong");
+                    //Debug.Log("something when wrong");
                 }
              }
             

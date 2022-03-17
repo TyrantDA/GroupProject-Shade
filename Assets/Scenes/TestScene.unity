@@ -189,6 +189,8 @@ MonoBehaviour:
   room: {fileID: 210960155}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 998661771}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!65 &113747111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -399,6 +401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2485177360639287921, guid: 4212b85eaead301488e2df626b818ceb,
         type: 3}
+      propertyPath: ID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485177360639287921, guid: 4212b85eaead301488e2df626b818ceb,
+        type: 3}
       propertyPath: placementOfDoors.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -556,6 +563,8 @@ MonoBehaviour:
   room: {fileID: 210960155}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1814273613}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!65 &322724061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -710,41 +719,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 721534297}
   player: {fileID: 564645209}
---- !u!114 &564645218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564645209}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4ebe85a8477e7e439c416b254201c70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetPosition: {x: 0, y: 0, z: 0}
---- !u!195 &564645219
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564645209}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1 &565782554
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,6 +873,8 @@ MonoBehaviour:
   room: {fileID: 2107279389}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1447826015}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!1001 &577208113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1158,7 +1134,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721534295}
   m_LocalRotation: {x: -0.23071086, y: -0.010127428, z: 0.001047212, w: -0.9729691}
-  m_LocalPosition: {x: 4.927374, y: 10.555511, z: -56.19232}
+  m_LocalPosition: {x: 27.187372, y: 10.555511, z: 2.1176796}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1336,6 +1312,8 @@ MonoBehaviour:
   room: {fileID: 2107279389}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 391003970}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!1 &936291750
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1456,8 @@ MonoBehaviour:
   room: {fileID: 2107279389}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 755970732}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!1 &978312216
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,6 +1494,8 @@ MonoBehaviour:
   room: {fileID: 210960155}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1590784440}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!65 &978312218
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1790,6 +1772,8 @@ MonoBehaviour:
   room: {fileID: 569199012}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1050157601}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!65 &1080595471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1978,6 +1962,8 @@ MonoBehaviour:
   room: {fileID: 2107279389}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1625313564}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!1001 &1190092195
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2092,7 +2078,7 @@ PrefabInstance:
     - target: {fileID: 520286464390927017, guid: 8e2e1e0d075144a49b9af20827814832,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.37
+      value: 27.63
       objectReference: {fileID: 0}
     - target: {fileID: 520286464390927017, guid: 8e2e1e0d075144a49b9af20827814832,
         type: 3}
@@ -2102,7 +2088,7 @@ PrefabInstance:
     - target: {fileID: 520286464390927017, guid: 8e2e1e0d075144a49b9af20827814832,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -42.61
+      value: 15.7
       objectReference: {fileID: 0}
     - target: {fileID: 520286464390927017, guid: 8e2e1e0d075144a49b9af20827814832,
         type: 3}
@@ -2351,6 +2337,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485177360639287921, guid: 4212b85eaead301488e2df626b818ceb,
+        type: 3}
+      propertyPath: ID
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2485177360639287921, guid: 4212b85eaead301488e2df626b818ceb,
         type: 3}
@@ -2794,6 +2785,8 @@ MonoBehaviour:
   room: {fileID: 2104101772}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 77819948}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!1 &1701362240
 GameObject:
   m_ObjectHideFlags: 0
@@ -2830,6 +2823,8 @@ MonoBehaviour:
   room: {fileID: 569199012}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1581482496}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!65 &1701362242
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2942,6 +2937,8 @@ MonoBehaviour:
   room: {fileID: 569199012}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1043966130}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!65 &1717856721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3310,6 +3307,8 @@ MonoBehaviour:
   room: {fileID: 2104101772}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 723051204}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!1 &1894693004
 GameObject:
   m_ObjectHideFlags: 0
@@ -3346,6 +3345,8 @@ MonoBehaviour:
   room: {fileID: 569199012}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1192463845}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!65 &1894693006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3458,6 +3459,8 @@ MonoBehaviour:
   room: {fileID: 210960155}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 565782555}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!65 &1982903815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3646,6 +3649,8 @@ MonoBehaviour:
   room: {fileID: 2104101772}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 1627900268}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!1 &2067715312
 GameObject:
   m_ObjectHideFlags: 0
@@ -3758,6 +3763,8 @@ MonoBehaviour:
   room: {fileID: 2104101772}
   control: {fileID: 605581933}
   SpawnPos: {fileID: 936291751}
+  linkedWith: 0
+  roomLink: {fileID: 0}
 --- !u!1001 &2089511272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3872,7 +3879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa611e2d262b4143abe5e80b38f2c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NumberOfDoor: 0
+  ID: 0
   placementOfDoors:
   - {fileID: 957387782}
   - {fileID: 573180821}
@@ -4016,6 +4023,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2485177360639287921, guid: 4212b85eaead301488e2df626b818ceb,
+        type: 3}
+      propertyPath: ID
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2485177360639287921, guid: 4212b85eaead301488e2df626b818ceb,
         type: 3}
