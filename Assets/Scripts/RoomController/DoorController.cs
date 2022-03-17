@@ -5,7 +5,9 @@ using System;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField] List<GameObject> rooms = new List<GameObject>();
+    // to be sent on a object outside all the rooms
+
+    [SerializeField] List<GameObject> rooms = new List<GameObject>(); // list of all rooms
 
     // Start is called before the first frame update
     void Start()

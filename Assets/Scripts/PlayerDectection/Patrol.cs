@@ -5,9 +5,10 @@ using UnityEngine.AI;
 
 public class Patrol : MonoBehaviour
 {
-    public List<GameObject> patrolList;
-    public GameObject Patroller;
-    public float speed;
+
+    public List<GameObject> patrolList; //list of empty object used a point to patrol between
+    public GameObject Patroller; //  game object that will be the enemy AI
+    public float speed; // not used
 
     int currentMovingTo;
     GameObject target;
@@ -27,6 +28,7 @@ public class Patrol : MonoBehaviour
         patrolling = set;
     }
     
+    // work out the distance between two game objects 
     float Lenth(GameObject p, GameObject pat)
     {
         float x = pat.transform.position.x * p.transform.position.x;
@@ -44,6 +46,7 @@ public class Patrol : MonoBehaviour
         return answer;
     }
 
+    // find the closest patrol point to the enemy AI
     GameObject closest(GameObject player)
     {
         int key = 0;
@@ -71,6 +74,7 @@ public class Patrol : MonoBehaviour
         return hold;
     }
 
+    // find the next patrol point to move two
     GameObject nextTarget()
     {
         
@@ -85,7 +89,8 @@ public class Patrol : MonoBehaviour
         return patrolList[currentMovingTo];
     }
 
-    // Update is called once per frame
+   
+    // run when patrolling. set the position to go to and check if they have reach in if so the next target function is run
     public void PatrolRunning()
     {
             agent.destination = target.transform.position;
@@ -99,7 +104,7 @@ public class Patrol : MonoBehaviour
                 target = nextTarget();
             }
     }
-
+    // Update is called once per frame
     void Update()
     {
         //if (patrolling)

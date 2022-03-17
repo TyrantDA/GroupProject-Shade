@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Room : MonoBehaviour
 {
-    public int ID;
-    [SerializeField] GameObject[] placementOfDoors;
+    // to be placed on the game object repistion the room the parent object nomal an empty object
+    public int ID; // ID of the room
+    [SerializeField] GameObject[] placementOfDoors; // array of door in this room
     
-    [SerializeField] Vector3 RoomPos;
+    [SerializeField] Vector3 RoomPos; // room pos used for testing
     // Start is called before the first frame update
     void Start()
     {

@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MoveRoom : MonoBehaviour
 {
-    public int ID;
-    public GameObject room;
-    public DoorController control;
-    public Transform SpawnPos;
+    //to be attached to the door trigger
+
+    public int ID; // the doors ID, ID's are to be labled clockwise start with 0 at the botton possition of the room e.g. botton door will all ways be 0 top door will be 2 and left door 1 and right 3  
+    public GameObject room; // the room game object that the door trigger is in
+    public DoorController control; // the controller object 
+    public Transform SpawnPos; // the empty game object in front of the door which is where the player will be spawn when exiting
 
     bool linked;
     [SerializeField] int linkedWith;

@@ -5,9 +5,12 @@ using UnityEngine.AI;
 
 public class Dectection : MonoBehaviour
 {
+    // NPC has two dection system a retangle coming out of the front repiretion line of site
     public float mRaycastRadius;  // width of our line of sight (x-axis and y-axis)
     public float mTargetDetectionDistance;  // depth of our line of sight (z-axis)
-    public float radiusDetect;
+
+    // and a sphere around the NPC to detect thinks at close range 
+    public float radiusDetect; //radius of detection around the NPC 
 
     public LayerMask detectLayers;
 
