@@ -38,6 +38,7 @@ public class DoorController : MonoBehaviour
                 num = 0;
             }
 
+            holdlink = 0;
             for (int x = 0; x < rooms[num].GetComponent<Room>().getPlacement().Length; x++)
             {
                 if (rooms[num].GetComponent<Room>().getPlacement()[x].GetComponent<MoveRoom>().IsLinked())
