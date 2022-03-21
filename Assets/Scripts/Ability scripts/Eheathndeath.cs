@@ -20,4 +20,13 @@ public class Eheathndeath : MonoBehaviour
         }
 
     }
+    void OnTriggerEnter(Collider other)
+    {
+        //Check to see if the tag on the collider is equal to Enemy
+        if (other.tag == "Player")
+        {
+            heath = heath - 20;
+            Debug.Log("kill");
+        }
+    }
 }
